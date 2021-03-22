@@ -3,25 +3,54 @@
 		<title>Hakuna Matata</title>
 		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="assets/js/owl.carousel.min.js"></script>
+        
+		<style>
+		    body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		    }
+		    iframe{
+			border: none;
+			margin: 0;
+			padding: 0;
+		    }
+		    .abc{
+			max-width: 80%;
+			margin: 0 auto;
+			height: 600px;
+		    }
+		</style>
 	</head>
 	<body>
-		<div class="owl-carousel owl-theme">
-		    <div class="item-video" data-merge="3"><a class="owl-video" href="https://vimeo.com/23924346"></a></div>
-		    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
-		    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
-		    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
-		    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-		    <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
-		    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
-		    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
-		</div>
-		
-		<script>
-			$(document).ready(function(){
-			  $(".owl-carousel").owlCarousel();
-			});
+        <div class="abc">
+            <div class="owl-carousel owl-theme">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VCZ-7GQP1Ko">
+                </iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nwTatevEkT0">
+                </iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VCZ-7GQP1Ko">
+                </iframe>
+                <iframe width='100%' height='100%' src='https://www.youtube.com/embed/S1x76DoACB8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
+            </div>
+        </div>
+		<script type="text/javascript">
+			$('.owl-carousel').owlCarousel({
+                items:1,
+                loop:true,
+                margin:10,
+                video:true,
+                lazyLoad:true,
+                videoWidth:true,
+                videoHeight:true,
+                nav:true,
+                dots: true,
+                slideTransition: 'ease',
+                smartSpeed: 800
+            })
 		</script>
 	</body>
 </html>
